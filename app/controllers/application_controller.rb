@@ -59,4 +59,7 @@ class ApplicationController < Sinatra::Base
     erb :deleted
   end
 
+  get '/posts' do
+    erb :index
+  end
 end
