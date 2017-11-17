@@ -26,7 +26,7 @@ class ApplicationController < Sinatra::Base
     @post.content = params[:content]
     @post.save
     @posts = Post.all
-    erb :index
+    erb :show
   end
 
   get '/index' do
